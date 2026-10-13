@@ -47,10 +47,10 @@
   },
   "devDependencies": {
     "builtin-modules": "^5.0.0",
-    "oxfmt": "^0.33.0",
+    "oxfmt": "^0.72.0",
     "oxlint": "^1.48.0",
-    "rolldown": "1.0.0-rc.5",
-    "typescript": "6.0.0-beta"
+    "rolldown": "1.2.13",
+    "typescript": "7.0.2"
   }
 }
 
