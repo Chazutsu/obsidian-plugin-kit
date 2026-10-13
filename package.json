@@ -2,6 +2,8 @@
   "name": "obsidian-plugin-kit",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.7.0",
+  "engines": { "node": ">=24" },
   "description": "Reusable build, type, and deployment foundations for Obsidian plugins",
   "license": "MIT",
   "repository": "github:Chazutsu/obsidian-plugin-kit",

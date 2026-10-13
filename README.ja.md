@@ -10,7 +10,7 @@ Obsidianプラグインを立ち上げるための非視覚基盤である。現
 - `./tsconfig`: React/TypeScriptプラグイン向けの厳格な型検査基準
 - `./deploy`: manifest、versions、Release成果物、既存Vault rootを検証し、`plugins/<plugin-id>`以外への誤配布を拒否する。複数Vaultへの配布とcommunity plugin有効化を一つのトランザクションとして扱い、途中で失敗した場合は旧状態へ戻す。配布先の新規初期化には明示的な指定が必要
 
-APIが成熟するまでは`private: true`を維持する。公開前にパッケージ名、対応Obsidian版、ライセンス、変更履歴を確定し、`private`を外す。
+ソースRepositoryは公開するが、npm公開は`private: true`で意図的に無効化する。利用側はタグ付きGit revisionを指定し、共有処理の内容と再現性を固定する。
 
 ## 昇格ルール
 
@@ -27,6 +27,6 @@ UIコンポーネント、色、余白、角丸、文言は共有しない。全
 2. 2製品目でも同じ問題が実在することを確認する
 3. プロダクト固有の語彙と見た目を除く
 4. 独立テストと後方互換の契約を追加する
-5. `packages/obsidian-plugin-kit`へ移し、両製品をworkspace依存へ切り替える
+5. このpackageへ移し、タグ付きreleaseを利用する
 
 「将来使いそう」は昇格理由にしない。共有による変更連鎖が、重複保守のコストを下回る場合だけ昇格する。
