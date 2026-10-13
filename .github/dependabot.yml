@@ -12,6 +12,13 @@ updates:
         dependency-type: development
         patterns:
           - '*'
+        update-types:
+          - minor
+          - patch
+    ignore:
+      - dependency-name: typescript
+        versions:
+          - ">=7.0.0"
     open-pull-requests-limit: 5
 
   - package-ecosystem: github-actions
