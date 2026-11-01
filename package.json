@@ -47,9 +47,9 @@
   },
   "devDependencies": {
     "builtin-modules": "^5.0.0",
-    "oxfmt": "^0.72.0",
-    "oxlint": "^1.48.0",
-    "rolldown": "1.2.13",
+    "oxfmt": "^0.75.0",
+    "oxlint": "^1.90.0",
+    "rolldown": "1.2.15",
     "typescript": "6.0.3"
   }
 }
